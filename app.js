@@ -1,5 +1,6 @@
 function refresh(){
-    var url =   "http://api.weatherstack.com/current?access_key=48d1fa0a786daf92e44a514a04759b1d&query=fetch:ip"
+    const proxy = `https://cors-anywhere.herokuapp.com/`
+    const url =   `${proxy}http://api.weatherstack.com/current?access_key=48d1fa0a786daf92e44a514a04759b1d&query=fetch:ip`
 
     function callback(data){
         console.log(data)
@@ -46,6 +47,4 @@ function refresh(){
     }
     $.getJSON(url,callback)
 }
-
-
 
