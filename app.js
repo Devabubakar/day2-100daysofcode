@@ -1,5 +1,5 @@
 function refresh(){
-    var url =   "http://api.weatherstack.com/current?access_key=48d1fa0a786daf92e44a514a04759b1d&query=fetch:ip"
+    var url =   "https://api.weatherstack.com/current?access_key=48d1fa0a786daf92e44a514a04759b1d&query=fetch:ip"
 
     function callback(data){
         console.log(data)
